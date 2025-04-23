@@ -1,0 +1,13 @@
+order += "cpu_usage"
+order += "disk /"
+order += "volume master"
+order += "battery all"
+order += "tztime local"
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+tztime local {
+    format = "%a %d %b %H:%M"
+}

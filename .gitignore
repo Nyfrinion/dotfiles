@@ -141,6 +141,9 @@ secrets/
 .emacs.d/straight/build/
 .emacs.d/straight/repos/*/.git
 .emacs.d/straight/versions/default.el
+.emacs.d/custom-vars.el
+.emacs.d/history
+
 
 # If using org-roam
 org-roam.db
@@ -157,3 +160,6 @@ org-roam.db
 **/elpa/
 **/auto-save-list/
 **/straight/
+**/eln-cache/
+**/transient/
+**/recentf/

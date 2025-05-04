@@ -1,0 +1,159 @@
+# === System files ===
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# === macOS metadata ===
+.AppleDouble
+.LSOverride
+
+# === Compiled files ===
+*.pyc
+*.o
+*.elc
+*.class
+*.lo
+*.la
+
+# === Emacs autosaves and backups ===
+# (if you use Emacs)
+*~
+# backup files
+*.bak
+# autosave files
+\#*\#
+.\#*
+
+# === vim/NeoVim ===
+.vim/backups/*
+.vim/tmp/*
+.vim/swap/*
+.vim/undo/*
+.vim/view/*
+.vim/.netrwhist
+.vim/.shada
+.vim/.viminfo
+.netrwhist
+.shada
+.viminfo
+.viminfo.tmp
+
+# === zsh ===
+.zcompdump*
+.zsh_history
+.zsh_sessions
+
+# === bash ===
+.bash_history
+.bash_sessions
+
+# === GPG/SSH ===
+.gnupg/
+.ssh/
+*.key
+*.pem
+
+# === KDE/Plasma & GUI state ===
+.cache/
+.kde*
+.config/kglobalshortcutsrc
+.config/kscreenlockerrc
+.config/kwinrc
+.config/plasmarc
+.config/plasma*
+.config/session/
+.config/user-dirs*
+.config/Trolltech.conf
+.Xauthority
+ICEauthority
+
+# === X11/Wayland ===
+.Xresources~
+.Xresources.backup
+.Xresources.bak
+.Xdefaults
+.xsession*
+.xinitrc*
+.serverauth.*
+
+# === GNOME ===
+.config/dconf/
+.local/share/gnome*
+
+# === Fonts cache ===
+.fontconfig/
+.config/fontconfig/
+.cache/fontconfig/
+
+# === Package-specific ===
+.config/Code*/User/workspaceStorage
+.config/discord/Cache
+.config/discord/Code Cache
+.config/discord/GPUCache
+.config/BraveSoftware/Brave-Browser/Default/GPUCache
+.config/BraveSoftware/Brave-Browser/Default/Code Cache
+
+# === Temp files ===
+*.tmp
+*.temp
+*.log
+
+# === Node/npm ===
+node_modules/
+npm-debug.log*
+
+# === Python virtualenvs ===
+venv/
+.env/
+
+# === Git ===
+.git/
+.gitmodules
+.gitignore
+
+# === Local overrides ===
+local.conf
+*.local
+*.secret
+*.private
+secrets/
+
+# === Emacs: Unnecessary or auto-generated files ===
+*~
+\#*\#               # Autosave files
+.\#*                # Lockfiles
+.emacs.desktop      # Session file
+.emacs.desktop.lock
+.emacs.d/url/       # eww browser cache
+.emacs.d/elpa/archives/  # ELPA package metadata cache
+.emacs.d/auto-save-list/
+.emacs.d/eshell/history
+.emacs.d/eshell/lastdir
+.emacs.d/bookmarks
+.emacs.d/places
+.emacs.d/tramp      # TRAMP cache
+.emacs.d/.cache/    # Custom cache dir
+.emacs.d/eln-cache/ # Native compilation cache
+.emacs.d/straight/build/
+.emacs.d/straight/repos/*/.git
+.emacs.d/straight/versions/default.el
+
+# If using org-roam
+org-roam.db
+
+# If using Doom Emacs
+.config/doom/.local/
+.config/doom/.session.*
+.config/doom/bookmarks
+.config/doom/workspaces
+.config/doom/savehist
+.config/doom/auto-save-list/
+
+# Optional: If you want to exclude all `elpa`/`straight`/`auto-save-list` directories anywhere
+**/elpa/
+**/auto-save-list/
+**/straight/

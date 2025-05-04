@@ -1,0 +1,19 @@
+* 📅 Daily Overview
+  Enter the date: <%(format-time-string "%A, %B %d %Y")>
+
+** ✅ Tasks
+- [ ] Review agenda
+- [ ] Code experiment
+- [ ] Log something I learned
+
+** 💡 Ideas
+- 
+
+** 🔬 Scratchpad
+#+BEGIN_SRC emacs-lisp
+;; Try things here
+(message "Hello, Emacs!")
+#+END_SRC
+
+** 📝 Notes
+- 

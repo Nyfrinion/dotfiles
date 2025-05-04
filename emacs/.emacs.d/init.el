@@ -436,11 +436,34 @@
 ;; Increase the amount of data which Emacs reads from the process
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
-
-;; use-package with package.el:
 (use-package dashboard
   :ensure t
   :config
+  ;;(setq dashboard-startup-banner 'none') ;; or a path to an image or custom ascii
+  (setq dashboard-banner-logo-title
+        "★ Welcome to Emacs, Andrew ♥\nYour productivity playground ✨")
+
+  (setq dashboard-center-content t)
+  (setq dashboard-items '((recents  . 5)
+                          (projects . 5)
+                          (agenda . 5)))
+
+  ;; Optional footer message with icons
+  (setq dashboard-footer-messages '("Commands\n New File - :e \n List Buffers - :buffers/:ls \n Switch to buffer x - :buffer x"))
+
   (dashboard-setup-startup-hook))
 
 (set-face-attribute 'default nil :font "JetBrainsMono Nerd Font" :height 110)
+
+;; default file template for the scratch buffer
+(defun my/load-scratch-template ()
+  (let ((template-file "~/.emacs.d/scratch-template.org"))
+    (when (file-exists-p template-file)
+      (with-current-buffer "*scratch*"
+        (erase-buffer)
+        (insert-file-contents template-file)
+        (org-mode))))) ;; or any mode you want
+
+(add-hook 'emacs-startup-hook #'my/load-scratch-template)
+
+

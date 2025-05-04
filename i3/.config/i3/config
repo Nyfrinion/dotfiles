@@ -1,6 +1,6 @@
 # ──────────────── BASIC SETTINGS ────────────────
 set $mod Mod4
-set $term kitty -e sh -c 'tmux has-session -t main && exec tmux attach -t main || exec tmux new-session -s main fish'
+set $term kitty -e sh -c 'tmux has-session -t main && exec tmux attach -t main || exec tmux new-session -s main zsh'
 set $refresh_i3status killall -SIGUSR1 i3status
 font pango:JetbrainsMonoNL Nerd Font Mono Semibold Italic 10
 
@@ -26,9 +26,9 @@ bindsym $mod+Shift+s exec shutter
 
 # ──────────────── PROGRAM LAUNCHERS ────────────────
 bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+f exec --no-startup-id thunar
-bindsym $mod+w exec --no-startup-id firefox
-bindsym $mod+e exec --no-startup-id emacsclient -c -a emacs ~/notes
+bindsym $mod+t exec --no-startup-id thunar
+bindsym $mod+i exec --no-startup-id firefox
+bindsym $mod+n exec --no-startup-id emacsclient -c -a emacs ~/notes
 
 
 # ──────────────── AUDIO ────────────────

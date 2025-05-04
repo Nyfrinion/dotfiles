@@ -8,6 +8,9 @@ programs=(
     "stow"           # Manage dotfiles
     "kitty"          # Terminal emulator
     "fish"           # Fish shell
+    "zsh"            # Zsh shell + plugins
+    "zsh-syntax-highlighting"
+    "zsh-autosuggestions"
     "tmux"           # Terminal multiplexer
     "git"            # Version control system
     "neovim"         # Text editor

@@ -439,9 +439,11 @@
 (use-package dashboard
   :ensure t
   :config
-  ;;(setq dashboard-startup-banner 'none') ;; or a path to an image or custom ascii
+  (setq dashboard-startup-banner "~/.emacs.d/images/di2.png")
+  (setq dashboard-image-banner-max-width 800)  ;; Set max width
+  (setq dashboard-image-banner-max-height 200) ;; Set max height
   (setq dashboard-banner-logo-title
-        "★ Welcome to Emacs, Andrew ♥\nYour productivity playground ✨")
+        "★ Welcome to Emacs ♥")
 
   (setq dashboard-center-content t)
   (setq dashboard-items '((recents  . 5)

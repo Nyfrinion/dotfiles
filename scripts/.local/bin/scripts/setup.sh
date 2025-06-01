@@ -26,6 +26,8 @@ programs=(
     "acpi"           # Battery status
     "pactl"     # Volume manager
     "brightnessctl"  # Brightness manager
+    "jq"
+    "nerd-fonts"
 )
 
 # Function to check if a package is installed

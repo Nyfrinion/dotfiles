@@ -28,7 +28,8 @@ bindsym $mod+Shift+s exec shutter
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+t exec --no-startup-id thunar
 bindsym $mod+i exec --no-startup-id firefox
-bindsym $mod+n exec --no-startup-id emacsclient -c -a emacs ~/notes
+bindsym $mod+n exec emacs
+bindsym $mod+shift+n exec --no-startup-id emacsclient -c -a emacs ~/notes
 
 
 # ──────────────── AUDIO ────────────────

@@ -468,4 +468,46 @@
 
 (add-hook 'emacs-startup-hook #'my/load-scratch-template)
 
+(setq inhibit-startup-screen t)
+(setq dired-listing-switches "-alh")
+(add-hook 'dired-mode-hook #'dired-hide-details-mode)
+
+(use-package pdf-tools
+  :ensure t
+  :config
+  (pdf-tools-install)
+  (setq-default pdf-view-display-size 'fit-page)
+
+  ;; Ensure incompatible modes are deactivated
+  (setq pdf-view-incompatible-modes '(display-line-numbers-mode))
+
+  ;; You can also explicitly add a hook to disable line numbers
+  (add-hook 'pdf-view-mode-hook (lambda ()
+                                  (display-line-numbers-mode -1)))
+)
+
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
+
+;; PDF Mode Keybindings
+(with-eval-after-load 'pdf-view
+  (which-key-add-keymap-based-replacements
+   pdf-view-mode-map
+   "t" '("PDF commands" . nil)
+   "t z" '("Zoom In" . pdf-view-enlarge)
+   "t x" '("Zoom Out" . pdf-view-shrink)
+   "t p" '("Previous Page" . pdf-view-previous-page)
+   "t n" '("Next Page" . pdf-view-next-page)))
+
+;; Org Mode Keybindings
+(with-eval-after-load 'org
+  (which-key-add-keymap-based-replacements
+   org-mode-map
+   "t" '("Org commands" . nil)
+   "t l" '("Toggle Line" . org-toggle-link-display)
+   "t t" '("Insert TODO" . org-insert-todo-heading)
+   "t c" '("Capture" . org-capture)))
+
 

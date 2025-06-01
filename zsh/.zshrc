@@ -48,3 +48,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # FZF (if installed)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source <(fzf --zsh)

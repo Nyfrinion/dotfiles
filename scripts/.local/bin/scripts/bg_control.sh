@@ -2,9 +2,12 @@
 
 # Map workspaces to background images
 declare -A wallpapers
-wallpapers["🐠"]="$HOME/Pictures/fish.png"
-wallpapers["2"]="$HOME/Pictures/2.jpg"
-wallpapers["3"]="$HOME/Pictures/3.jpg"
+wallpapers["🐠"]="$HOME/resources/wallpapers/fish.png"
+wallpapers["🦞"]="$HOME/resources/wallpapers/lobster.png"
+wallpapers["🐙"]="$HOME/resources/wallpapers/octopus.png"
+wallpapers["🐳"]="$HOME/resources/wallpapers/whale.png"
+wallpapers["🪼"]="$HOME/resources/wallpapers/jellyfish.png"
+wallpapers["🦈"]="$HOME/resources/wallpapers/shark.png"
 # Add more as needed
 
 # Listen to workspace changes
